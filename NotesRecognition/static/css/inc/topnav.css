@@ -1,0 +1,15 @@
+
+
+.topnav {
+    display: flex;
+    flex-direction: row;
+    background-color: blue;
+    padding: 0;
+    height: 40px;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.nav-button {
+
+}
