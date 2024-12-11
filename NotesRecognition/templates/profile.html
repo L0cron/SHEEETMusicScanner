@@ -1,0 +1,33 @@
+{% extends 'inc/base.html' %}
+{% load static %}
+
+{% block title %}
+    <title>Профиль</title>
+{% endblock %}
+
+{% block style %}
+    <link rel="stylesheet" href="{% static 'css/profile.css' %}">
+{% endblock %}
+
+{% block body %}
+    {% include 'inc/topnav.html' %}
+    <div class="profile-container">
+        <div class="header">
+            <div class="username">Логин пользователя</div>
+        </div>
+        <div class="audio-container">
+            <h2>Полученные аудио</h2>
+            <ul>
+            </ul>
+        </div>
+        <div class="images-container">
+            <h2>Загруженные изображения</h2>
+            <div class="images-grid">
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block script %}
+
+{% endblock %}

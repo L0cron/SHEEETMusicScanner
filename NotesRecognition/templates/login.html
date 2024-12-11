@@ -1,0 +1,26 @@
+{% extends 'inc/base.html' %}
+{% load static %}
+
+{% block title %}
+    <title>Авторизация</title>
+{% endblock %}
+
+{% block style %}
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <div class="title">Авторизация</div>
+        <form class="form">
+            <input type="text" placeholder="Логин" required>
+            <input type="password" placeholder="Пароль" required>
+            <button class="login-button" type="submit">Войти</button>
+        </form>
+        <p class="no-account">Нет аккаунта? <a href='{% url "user:register" %}'>Регистрация</a>.</p>
+    </div>
+{% endblock %}
+
+{% block script %}
+
+{% endblock %}
